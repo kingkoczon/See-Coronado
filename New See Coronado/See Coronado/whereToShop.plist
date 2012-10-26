@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>To Shop</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>4Outdoor</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>4Indoor</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>4Athletic</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>4Family</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>4Free</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>4Gym/Spa</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>4Leisure</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>4Night Life</string>
+		</dict>
+	</array>
+</dict>
+</plist>
