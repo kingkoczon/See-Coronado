@@ -36,7 +36,7 @@
         NSString * drillDownFile = [[NSBundle mainBundle] pathForResource:self.dataKey ofType:@"plist"];
         _drillDown = [NSDictionary dictionaryWithContentsOfFile:drillDownFile];
         self.drillDownKeys = [_drillDown objectForKey:@"items"];
-        self.navigationItem.title = [_drillDown objectForKey:@"name"];
+        self.title = [_drillDown objectForKey:@"name"];
     }
 
     // Uncomment the following line to preserve selection between presentations.
