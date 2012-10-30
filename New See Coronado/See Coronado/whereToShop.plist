@@ -7,36 +7,52 @@
 	<key>items</key>
 	<array>
 		<dict>
+			<key>image</key>
+			<string>bb.png</string>
 			<key>name</key>
 			<string>4Outdoor</string>
 		</dict>
 		<dict>
+			<key>image</key>
+			<string>bb.png</string>
 			<key>name</key>
 			<string>4Indoor</string>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>4Athletic</string>
+			<key>image</key>
+			<string>bb2.png</string>
 		</dict>
 		<dict>
+			<key>image</key>
+			<string>bb3.png</string>
 			<key>name</key>
 			<string>4Family</string>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>4Free</string>
+			<key>image</key>
+			<string>bb.png</string>
 		</dict>
 		<dict>
+			<key>image</key>
+			<string>bb.png</string>
 			<key>name</key>
 			<string>4Gym/Spa</string>
 		</dict>
 		<dict>
+			<key>image</key>
+			<string>bb.png</string>
 			<key>name</key>
 			<string>4Leisure</string>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>4Night Life</string>
+			<key>image</key>
+			<string>bb.png</string>
 		</dict>
 	</array>
 </dict>

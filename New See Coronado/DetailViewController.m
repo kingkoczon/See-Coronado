@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "DrillDownTableViewController.h"
 
 @interface DetailViewController ()
 
@@ -17,6 +18,8 @@
 @synthesize name = _name;
 @synthesize nameHeader = _nameHeader;
 @synthesize mainImage = _mainImage;
+@synthesize imageString = _imageString;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,10 +33,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _nameHeader.text = self.name;
     
-    UIImage * mainImg = [UIImage imageNamed:@"bb.png"];
-    _mainImage.image = mainImg;
+    _nameHeader.text = _name;
+    _mainImage.image = [UIImage imageNamed:_imageString];
+    
 	// Do any additional setup after loading the view.
 }
 

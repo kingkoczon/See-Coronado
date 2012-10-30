@@ -35,6 +35,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    
     self.doButton.sectionString = @"doButton";
     self.eatButton.sectionString = @"eatButton";
     self.seeButton.sectionString = @"seeButton";

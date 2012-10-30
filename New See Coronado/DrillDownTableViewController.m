@@ -9,13 +9,15 @@
 #import "DrillDownTableViewController.h"
 #import "DetailViewController.h"
 
+
 @interface DrillDownTableViewController ()
 
 @end
 
 @implementation DrillDownTableViewController
 
-@synthesize dataKey = _dataKey, drillDownKeys = _drillDownKeys;
+@synthesize dataKey = _dataKey, drillDownKeys = _drillDownKeys, drillDown = _drillDown;
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -30,10 +32,12 @@
 {
     [super viewDidLoad];
     
-    NSString * drillDownFile = [[NSBundle mainBundle] pathForResource:self.dataKey ofType:@"plist"];
-    NSDictionary * thelist = [NSDictionary dictionaryWithContentsOfFile:drillDownFile];
-    self.drillDownKeys = [thelist objectForKey:@"items"];
-    self.navigationItem.title = [thelist objectForKey:@"name"];
+    if (_drillDown == nil) {
+        NSString * drillDownFile = [[NSBundle mainBundle] pathForResource:self.dataKey ofType:@"plist"];
+        _drillDown = [NSDictionary dictionaryWithContentsOfFile:drillDownFile];
+        self.drillDownKeys = [_drillDown objectForKey:@"items"];
+        self.navigationItem.title = [_drillDown objectForKey:@"name"];
+    }
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -57,14 +61,15 @@
 #pragma mark - UIStoryBoard Delegate
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSDictionary * tier = (NSDictionary*)sender;
+    NSDictionary * tier = (NSDictionary *)sender;
     if ([segue.identifier isEqualToString:@"loopbackSegue"]) {
-        DrillDownTableViewController * nextController = segue.destinationViewController;
-        nextController.drillDownKeys = [tier objectForKey:@"items"];
-        nextController.navigationItem.title = [tier objectForKey:@"name"];
+        DrillDownTableViewController * loopbackController = segue.destinationViewController;
+        loopbackController.drillDownKeys = [tier objectForKey:@"items"];
+        loopbackController.navigationItem.title = [tier objectForKey:@"name"];
     } else if ([segue.identifier isEqualToString:@"detailViewSegue"]) {
         DetailViewController * detailController = segue.destinationViewController;
         detailController.name = [tier objectForKey:@"name"];
+        detailController.imageString = [tier objectForKey:@"image"];
     }
 }
 
@@ -79,8 +84,8 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString* cellIdentifier = @"drillCell";
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    static NSString * cellIdentifier = @"drillCell";
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if(cell) {
         cell.textLabel.text = [[self.drillDownKeys objectAtIndex:indexPath.row] objectForKey:@"name"];
     }    
@@ -90,7 +95,7 @@
 #pragma mark - UITableView Delegate methods
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSDictionary* tier = [self.drillDownKeys objectAtIndex:indexPath.row];
+    NSDictionary * tier = [self.drillDownKeys objectAtIndex:indexPath.row];
     if ([tier objectForKey:@"items"]) {
         [self performSegueWithIdentifier:@"loopbackSegue" sender:tier];
     } else {

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		01ECE0CE160A0DD8000FC2FA /* ButtonGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ECE0CD160A0DD8000FC2FA /* ButtonGridViewController.m */; };
 		01ECE0D2160A0ECD000FC2FA /* TaggedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ECE0D1160A0ECD000FC2FA /* TaggedButton.m */; };
+		8C08B691163B117A0070D000 /* bb3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C08B68F163B117A0070D000 /* bb3.png */; };
+		8C08B692163B117A0070D000 /* bb2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C08B690163B117A0070D000 /* bb2.png */; };
 		8C0C267515ED2037004991AD /* familyToDo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C0C267415ED2037004991AD /* familyToDo.plist */; };
 		8C0C267715ED5D39004991AD /* freeToDo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C0C267615ED5D39004991AD /* freeToDo.plist */; };
 		8C0C267F15ED5D78004991AD /* gymspaToDo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C0C267E15ED5D78004991AD /* gymspaToDo.plist */; };
@@ -61,6 +63,8 @@
 		01ECE0CD160A0DD8000FC2FA /* ButtonGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonGridViewController.m; sourceTree = "<group>"; };
 		01ECE0D0160A0ECD000FC2FA /* TaggedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaggedButton.h; sourceTree = "<group>"; };
 		01ECE0D1160A0ECD000FC2FA /* TaggedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaggedButton.m; sourceTree = "<group>"; };
+		8C08B68F163B117A0070D000 /* bb3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bb3.png; sourceTree = "<group>"; };
+		8C08B690163B117A0070D000 /* bb2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bb2.png; sourceTree = "<group>"; };
 		8C0C267415ED2037004991AD /* familyToDo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = familyToDo.plist; sourceTree = "<group>"; };
 		8C0C267615ED5D39004991AD /* freeToDo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = freeToDo.plist; sourceTree = "<group>"; };
 		8C0C267E15ED5D78004991AD /* gymspaToDo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gymspaToDo.plist; sourceTree = "<group>"; };
@@ -282,6 +286,8 @@
 				01ECE0D1160A0ECD000FC2FA /* TaggedButton.m */,
 				8C466ED516385302006A0F60 /* ItemList.plist */,
 				8C0C748A163ADC1D00E0C476 /* bb.png */,
+				8C08B68F163B117A0070D000 /* bb3.png */,
+				8C08B690163B117A0070D000 /* bb2.png */,
 				8C813C9C15B6158B004CD60A /* toDo */,
 				8C813C9D15B615A2004CD60A /* toEat */,
 				8C813CA215B619F8004CD60A /* toSee */,
@@ -456,6 +462,8 @@
 				8C52F47A15FFDE9B008BA1BD /* sugar.jpeg in Resources */,
 				8C466ED616385302006A0F60 /* ItemList.plist in Resources */,
 				8C0C748B163ADC1D00E0C476 /* bb.png in Resources */,
+				8C08B691163B117A0070D000 /* bb3.png in Resources */,
+				8C08B692163B117A0070D000 /* bb2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

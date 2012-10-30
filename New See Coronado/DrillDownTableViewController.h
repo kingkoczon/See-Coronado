@@ -11,6 +11,7 @@
 @interface DrillDownTableViewController : UITableViewController
 
 @property (atomic, strong) NSString * dataKey;
+@property (nonatomic, strong) NSDictionary * drillDown;
 @property (nonatomic, strong) NSArray * drillDownKeys;
 
 @end

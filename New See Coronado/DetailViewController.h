@@ -11,8 +11,8 @@
 @interface DetailViewController : UIViewController
 
 @property (nonatomic, strong) NSString * name;
-
 @property (nonatomic, weak) IBOutlet UILabel *nameHeader;
-@property (weak, nonatomic) IBOutlet UIImageView *mainImage;
+@property (nonatomic, weak) IBOutlet UIImageView *mainImage;
+@property (nonatomic, strong) NSString * imageString;
 
 @end
