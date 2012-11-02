@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="15e-5r-fC7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="11G56" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="15e-5r-fC7">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
     <scenes>
         <!--Button Grid View Controller - See Coronado-->
         <scene sceneID="ybU-NS-Xmo">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1vK-wG-WNb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="B3d-IF-d2I" customClass="ButtonGridViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nYQ-q1-IcZ">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -179,13 +177,13 @@
                         <outlet property="travelButton" destination="EmG-dV-ce9" id="WHj-A9-paw"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vK-wG-WNb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="495" y="688"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="yj5-U3-LnG">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d4y-gG-OYf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="9cq-To-LRB" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4LO-cv-0Bm">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
@@ -208,13 +206,13 @@
                         </connections>
                     </tableView>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4y-gG-OYf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3191" y="2752"/>
         </scene>
         <!--Drill Down Table View Controller-->
         <scene sceneID="AC5-Gi-k4S">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LjQ-Sd-VAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="z2c-dU-yaf" customClass="DrillDownTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="QGp-ee-xO7">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -241,6 +239,7 @@
                         <segue destination="iHR-hg-c4X" kind="push" identifier="detailViewSegue" id="9oQ-zc-t9m"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LjQ-Sd-VAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <barButtonItem title="Item" id="CQC-QO-pS7">
                     <connections>
                         <segue destination="z2c-dU-yaf" kind="push" identifier="loopbackSegue" id="GdB-8E-BwY"/>
@@ -252,15 +251,14 @@
         <!--Detail View Controller-->
         <scene sceneID="1tR-Xg-eS9">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="S3O-aj-Bdm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="iHR-hg-c4X" customClass="DetailViewController" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="NSM-lj-e5Z">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Zwd-WB-0Ta">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Header Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Awz-fR-aEZ">
                                         <rect key="frame" x="69" y="8" width="200" height="20"/>
@@ -307,7 +305,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" id="eoc-kQ-N39">
-                                        <rect key="frame" x="12" y="264" width="297" height="137"/>
+                                        <rect key="frame" x="12" y="264" width="297" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">Hotel del Coronado (also known as The Del and Hotel Del) is a beachfront luxury hotel in the city of Coronado, just across the San Diego Bay from San Diego, California. It is one of the few surviving examples of an American architectural genre: the wooden Victorian beach resort. It is one of the oldest and largest all-wooden buildings in California and was designated a National Historic Landmark in 1977,[3][5] and is a designated California Historical Landmark.[4]
 When it opened in 1888, it was the largest resort hotel in the world. It has hosted presidents, royalty, and celebrities through the years.[6] The hotel has been featured in numerous movies and books.
@@ -332,13 +330,13 @@ The hotel received a Four Diamond rating from the American Automobile Associatio
                         <outlet property="subHeader" destination="1Lr-gM-75C" id="MgE-D9-6Fc"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S3O-aj-Bdm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1738" y="688"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="M72-9M-q7d">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="asZ-1a-hww" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="15e-5r-fC7" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="qfc-Xn-suu">
@@ -350,13 +348,13 @@ The hotel received a Four Diamond rating from the American Automobile Associatio
                         <segue destination="B3d-IF-d2I" kind="relationship" relationship="rootViewController" id="sNo-aI-f8U"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asZ-1a-hww" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-31" y="688"/>
         </scene>
         <!--Map View Controller - Map-->
         <scene sceneID="MY3-to-Bxf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nTw-uM-F7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Qo7-ga-OAN" customClass="MapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uZ1-k5-zZF">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -377,13 +375,13 @@ The hotel received a Four Diamond rating from the American Automobile Associatio
                         <outlet property="mapView" destination="KJ9-gp-20h" id="oEk-LM-sRR"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nTw-uM-F7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-31" y="1623"/>
         </scene>
         <!--View Controller - Info-->
         <scene sceneID="tTZ-8c-PMl">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e4M-No-qVs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Ti4-pi-FCA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SJL-sc-WKA">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -392,13 +390,13 @@ The hotel received a Four Diamond rating from the American Automobile Associatio
                     </view>
                     <navigationItem key="navigationItem" title="Info" id="le4-kk-oSb"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e4M-No-qVs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-31" y="2279"/>
         </scene>
         <!--View Controller - Search-->
         <scene sceneID="gRX-kR-Q7a">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UhW-kI-Ahb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="nII-rd-pgr" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xTL-8i-7b8">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -407,6 +405,7 @@ The hotel received a Four Diamond rating from the American Automobile Associatio
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="tej-V7-tLU"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UhW-kI-Ahb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-31" y="2927"/>
         </scene>

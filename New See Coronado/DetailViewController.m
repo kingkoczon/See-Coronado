@@ -46,7 +46,7 @@
     [super viewDidLoad];
     [self.view sizeToFit];
     _scroll.scrollEnabled = YES;
-    [_scroll setContentSize:CGSizeMake(320, self.view.frame.size.height)];
+
     
 
     _nameHeader.text = _name;
@@ -56,7 +56,7 @@
     _phone.text = _phoneNumber;
     _description.text = _descriptionText;
     [_description sizeToFit];
-    
+    [_scroll setContentSize:CGSizeMake(320, _description.frame.origin.y+_description.frame.size.height)];
     
 	// Do any additional setup after loading the view.
 }
