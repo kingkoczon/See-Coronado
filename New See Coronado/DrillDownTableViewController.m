@@ -32,7 +32,7 @@
 {
     [super viewDidLoad];
     
-    if (_drillDown == nil) {
+    if (_drillDownKeys == nil) {
         NSString * drillDownFile = [[NSBundle mainBundle] pathForResource:self.dataKey ofType:@"plist"];
         _drillDown = [NSDictionary dictionaryWithContentsOfFile:drillDownFile];
         self.drillDownKeys = [_drillDown objectForKey:@"items"];
@@ -69,7 +69,11 @@
     } else if ([segue.identifier isEqualToString:@"detailViewSegue"]) {
         DetailViewController * detailController = segue.destinationViewController;
         detailController.name = [tier objectForKey:@"name"];
+        detailController.subHeaderText = [tier objectForKey:@"subheader"];
         detailController.imageString = [tier objectForKey:@"image"];
+        detailController.hoursText = [tier objectForKey:@"hours"];
+        detailController.phoneNumber = [tier objectForKey:@"phone"];
+        detailController.descriptionText = [tier objectForKey:@"description"];
     }
 }
 

@@ -254,32 +254,86 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S3O-aj-Bdm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="iHR-hg-c4X" customClass="DetailViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NSM-lj-e5Z">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="NSM-lj-e5Z">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Awz-fR-aEZ">
-                                <rect key="frame" x="20" y="20" width="280" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="NBM-pv-OpN">
-                                <rect key="frame" x="7" y="119" width="305" height="188"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Zwd-WB-0Ta">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Header Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Awz-fR-aEZ">
+                                        <rect key="frame" x="69" y="8" width="200" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="NBM-pv-OpN">
+                                        <rect key="frame" x="0.0" y="65" width="320" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Address Line" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="1Lr-gM-75C">
+                                        <rect key="frame" x="69" y="36" width="200" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="3VX-1J-ccc">
+                                        <rect key="frame" x="12" y="8" width="49" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="pHL-NL-LsQ">
+                                        <rect key="frame" x="161" y="223" width="33" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Phone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="acc-SA-6Hd">
+                                        <rect key="frame" x="205" y="229" width="95" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hours" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="aKH-2U-8bO">
+                                        <rect key="frame" x="53" y="229" width="100" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="fK9-dx-J2o">
+                                        <rect key="frame" x="12" y="223" width="33" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" id="eoc-kQ-N39">
+                                        <rect key="frame" x="12" y="264" width="297" height="137"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Hotel del Coronado (also known as The Del and Hotel Del) is a beachfront luxury hotel in the city of Coronado, just across the San Diego Bay from San Diego, California. It is one of the few surviving examples of an American architectural genre: the wooden Victorian beach resort. It is one of the oldest and largest all-wooden buildings in California and was designated a National Historic Landmark in 1977,[3][5] and is a designated California Historical Landmark.[4]
+When it opened in 1888, it was the largest resort hotel in the world. It has hosted presidents, royalty, and celebrities through the years.[6] The hotel has been featured in numerous movies and books.
+The hotel received a Four Diamond rating from the American Automobile Association,[7] and was once listed by USA Today as one of the "Top 10 Resorts In The World", though it has since been removed from that list.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="b4H-1a-5de"/>
                     <connections>
+                        <outlet property="description" destination="eoc-kQ-N39" id="uQf-Ty-FrX"/>
+                        <outlet property="hours" destination="aKH-2U-8bO" id="Jid-E1-As0"/>
                         <outlet property="mainImage" destination="NBM-pv-OpN" id="Li9-N2-WmU"/>
                         <outlet property="nameHeader" destination="Awz-fR-aEZ" id="hwV-VM-3QO"/>
+                        <outlet property="phone" destination="acc-SA-6Hd" id="EUh-Vd-fHm"/>
+                        <outlet property="scroll" destination="Zwd-WB-0Ta" id="p6E-Lt-F1w"/>
+                        <outlet property="subHeader" destination="1Lr-gM-75C" id="MgE-D9-6Fc"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1725" y="688"/>
+            <point key="canvasLocation" x="1738" y="688"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="M72-9M-q7d">
@@ -370,6 +424,43 @@
         <image name="stay.png" width="106" height="138"/>
         <image name="travel.png" width="106" height="138"/>
     </resources>
+    <classes>
+        <class className="ButtonGridViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ButtonGridViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="doButton" candidateClass="TaggedButton"/>
+                <relationship kind="outlet" name="eatButton" candidateClass="TaggedButton"/>
+                <relationship kind="outlet" name="seeButton" candidateClass="TaggedButton"/>
+                <relationship kind="outlet" name="shopButton" candidateClass="TaggedButton"/>
+                <relationship kind="outlet" name="stayButton" candidateClass="TaggedButton"/>
+                <relationship kind="outlet" name="travelButton" candidateClass="TaggedButton"/>
+            </relationships>
+        </class>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="description" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hours" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mainImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="nameHeader" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="phone" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="scroll" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="subHeader" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="DrillDownTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DrillDownTableViewController.h"/>
+        </class>
+        <class className="MapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+        <class className="TaggedButton" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TaggedButton.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

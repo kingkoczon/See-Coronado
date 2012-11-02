@@ -7,48 +7,72 @@
 	<key>items</key>
 	<array>
 		<dict>
+			<key>phone</key>
+			<string>1.619.435.4444</string>
+			<key>hours</key>
+			<string>7:00am - 5:00pm</string>
+			<key>description</key>
+			<string>Hotel del Coronado (also known as The Del and Hotel Del) is a beachfront luxury hotel in the city of Coronado, just across the San Diego Bay from San Diego, California. It is one of the few surviving examples of an American architectural genre: the wooden Victorian beach resort. It is one of the oldest and largest all-wooden buildings in California and was designated a National Historic Landmark in 1977,[3][5] and is a designated California Historical Landmark.[4]
+When it opened in 1888, it was the largest resort hotel in the world. It has hosted presidents, royalty, and celebrities through the years.[6] The hotel has been featured in numerous movies and books.
+The hotel received a Four Diamond rating from the American Automobile Association,[7] and was once listed by USA Today as one of the &quot;Top 10 Resorts In The World&quot;, though it has since been removed from that list.</string>
+			<key>subheader</key>
+			<string>Address could go here</string>
 			<key>image</key>
 			<string>bb.png</string>
 			<key>name</key>
 			<string>4Outdoor</string>
 		</dict>
 		<dict>
+			<key>subheader</key>
+			<string>Address could go here</string>
 			<key>image</key>
 			<string>bb.png</string>
 			<key>name</key>
 			<string>4Indoor</string>
 		</dict>
 		<dict>
+			<key>subheader</key>
+			<string>Address could go here3</string>
 			<key>name</key>
 			<string>4Athletic</string>
 			<key>image</key>
 			<string>bb2.png</string>
 		</dict>
 		<dict>
+			<key>subheader</key>
+			<string>Address could go here4</string>
 			<key>image</key>
 			<string>bb3.png</string>
 			<key>name</key>
 			<string>4Family</string>
 		</dict>
 		<dict>
+			<key>subheader</key>
+			<string>Address could go here5</string>
 			<key>name</key>
 			<string>4Free</string>
 			<key>image</key>
 			<string>bb.png</string>
 		</dict>
 		<dict>
+			<key>subheader</key>
+			<string>Address could go here6</string>
 			<key>image</key>
 			<string>bb.png</string>
 			<key>name</key>
 			<string>4Gym/Spa</string>
 		</dict>
 		<dict>
+			<key>subheader</key>
+			<string>Address could go here7</string>
 			<key>image</key>
 			<string>bb.png</string>
 			<key>name</key>
 			<string>4Leisure</string>
 		</dict>
 		<dict>
+			<key>subheader</key>
+			<string>Address could go here8</string>
 			<key>name</key>
 			<string>4Night Life</string>
 			<key>image</key>
