@@ -54,6 +54,8 @@
 		8C8368CF15B7708F00BCD6A9 /* howToTravel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C8368CE15B7708F00BCD6A9 /* howToTravel.plist */; };
 		8C8C54EA15BF4F8700818055 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8C54E915BF4F8700818055 /* CoreLocation.framework */; };
 		8CB2BA3615B5CBBA00AD7361 /* whatToDo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CB2BA3515B5CBBA00AD7361 /* whatToDo.plist */; };
+		8CBD9259164ADB2900942DAB /* tie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CBD9258164ADB2900942DAB /* tie.jpg */; };
+		8CBD9260164AE8BF00942DAB /* GetDirectionsMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBD925F164AE8BF00942DAB /* GetDirectionsMapViewController.m */; };
 		8CD1DD6F15D0772700FE4B90 /* athleticToDo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CD1DD6E15D0772700FE4B90 /* athleticToDo.plist */; };
 		8CE6939B16389013000F84C8 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE6939A16389013000F84C8 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
@@ -113,6 +115,9 @@
 		8C8368CE15B7708F00BCD6A9 /* howToTravel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = howToTravel.plist; sourceTree = "<group>"; };
 		8C8C54E915BF4F8700818055 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8CB2BA3515B5CBBA00AD7361 /* whatToDo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = whatToDo.plist; sourceTree = "<group>"; };
+		8CBD9258164ADB2900942DAB /* tie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tie.jpg; sourceTree = "<group>"; };
+		8CBD925E164AE8BF00942DAB /* GetDirectionsMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetDirectionsMapViewController.h; path = ../GetDirectionsMapViewController.h; sourceTree = "<group>"; };
+		8CBD925F164AE8BF00942DAB /* GetDirectionsMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GetDirectionsMapViewController.m; path = ../GetDirectionsMapViewController.m; sourceTree = "<group>"; };
 		8CD1DD6E15D0772700FE4B90 /* athleticToDo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = athleticToDo.plist; sourceTree = "<group>"; };
 		8CDFBAC9160A06A300B7470B /* bedbreakfast.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = bedbreakfast.plist; sourceTree = "<group>"; };
 		8CDFBACF160A071300B7470B /* whereToStay.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = whereToStay.plist; sourceTree = "<group>"; };
@@ -274,6 +279,8 @@
 				8C51A268156194FB00DB6105 /* AppDelegate.h */,
 				8C51A269156194FB00DB6105 /* AppDelegate.m */,
 				8C51A26B156194FB00DB6105 /* MainStoryboard.storyboard */,
+				8CBD925E164AE8BF00942DAB /* GetDirectionsMapViewController.h */,
+				8CBD925F164AE8BF00942DAB /* GetDirectionsMapViewController.m */,
 				8C55021E15B8C81E00AF3F4B /* MapViewController.h */,
 				8C55021F15B8C81E00AF3F4B /* MapViewController.m */,
 				8CE6939916389013000F84C8 /* DetailViewController.h */,
@@ -288,6 +295,7 @@
 				8C0C748A163ADC1D00E0C476 /* bb.png */,
 				8C08B68F163B117A0070D000 /* bb3.png */,
 				8C08B690163B117A0070D000 /* bb2.png */,
+				8CBD9258164ADB2900942DAB /* tie.jpg */,
 				8C813C9C15B6158B004CD60A /* toDo */,
 				8C813C9D15B615A2004CD60A /* toEat */,
 				8C813CA215B619F8004CD60A /* toSee */,
@@ -464,6 +472,7 @@
 				8C0C748B163ADC1D00E0C476 /* bb.png in Resources */,
 				8C08B691163B117A0070D000 /* bb3.png in Resources */,
 				8C08B692163B117A0070D000 /* bb2.png in Resources */,
+				8CBD9259164ADB2900942DAB /* tie.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +490,7 @@
 				01ECE0D2160A0ECD000FC2FA /* TaggedButton.m in Sources */,
 				8C17AAFB16374284000448EA /* DrillDownTableViewController.m in Sources */,
 				8CE6939B16389013000F84C8 /* DetailViewController.m in Sources */,
+				8CBD9260164AE8BF00942DAB /* GetDirectionsMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

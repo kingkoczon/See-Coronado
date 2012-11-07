@@ -7,6 +7,8 @@
 	<key>items</key>
 	<array>
 		<dict>
+			<key>selectionImage</key>
+			<string>tie.jpg</string>
 			<key>phone</key>
 			<string>1.619.435.4444</string>
 			<key>hours</key>
@@ -17,15 +19,19 @@ When it opened in 1888, it was the largest resort hotel in the world. It has hos
 The hotel received a Four Diamond rating from the American Automobile Association,[7] and was once listed by USA Today as one of the &quot;Top 10 Resorts In The World&quot;, though it has since been removed from that list.</string>
 			<key>subheader</key>
 			<string>Address could go here</string>
-			<key>image</key>
+			<key>mainImage</key>
 			<string>bb.png</string>
 			<key>name</key>
 			<string>4Outdoor</string>
 		</dict>
 		<dict>
+			<key>description</key>
+			<string>askjdfh as adsljfj aslkjfa ;skfdj asd;lfj as;lkfja sld;fkjf alksjfd alk;sfdj alks;jf .  alsjdf alsjf a sfdlkja sfjas dfkasdjf alksjfd a;lskdjf asd.</string>
+			<key>selectionImage</key>
+			<string>tie.jpg</string>
 			<key>subheader</key>
 			<string>Address could go here</string>
-			<key>image</key>
+			<key>mainImage</key>
 			<string>bb.png</string>
 			<key>name</key>
 			<string>4Indoor</string>
@@ -35,13 +41,13 @@ The hotel received a Four Diamond rating from the American Automobile Associatio
 			<string>Address could go here3</string>
 			<key>name</key>
 			<string>4Athletic</string>
-			<key>image</key>
+			<key>mainImage</key>
 			<string>bb2.png</string>
 		</dict>
 		<dict>
 			<key>subheader</key>
 			<string>Address could go here4</string>
-			<key>image</key>
+			<key>mainImage</key>
 			<string>bb3.png</string>
 			<key>name</key>
 			<string>4Family</string>
@@ -51,13 +57,13 @@ The hotel received a Four Diamond rating from the American Automobile Associatio
 			<string>Address could go here5</string>
 			<key>name</key>
 			<string>4Free</string>
-			<key>image</key>
+			<key>mainImage</key>
 			<string>bb.png</string>
 		</dict>
 		<dict>
 			<key>subheader</key>
 			<string>Address could go here6</string>
-			<key>image</key>
+			<key>mainImage</key>
 			<string>bb.png</string>
 			<key>name</key>
 			<string>4Gym/Spa</string>
@@ -65,7 +71,7 @@ The hotel received a Four Diamond rating from the American Automobile Associatio
 		<dict>
 			<key>subheader</key>
 			<string>Address could go here7</string>
-			<key>image</key>
+			<key>mainImage</key>
 			<string>bb.png</string>
 			<key>name</key>
 			<string>4Leisure</string>
@@ -75,7 +81,7 @@ The hotel received a Four Diamond rating from the American Automobile Associatio
 			<string>Address could go here8</string>
 			<key>name</key>
 			<string>4Night Life</string>
-			<key>image</key>
+			<key>mainImage</key>
 			<string>bb.png</string>
 		</dict>
 	</array>

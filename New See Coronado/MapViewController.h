@@ -12,7 +12,7 @@
 
 @interface MapViewController : UIViewController <MKMapViewDelegate> 
 
-@property (nonatomic, weak) IBOutlet MKMapView *mapView;
+@property (nonatomic, weak) IBOutlet MKMapView * mapView;
 
 
 @end

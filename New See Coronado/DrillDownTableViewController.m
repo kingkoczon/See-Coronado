@@ -70,10 +70,11 @@
         DetailViewController * detailController = segue.destinationViewController;
         detailController.name = [tier objectForKey:@"name"];
         detailController.subHeaderText = [tier objectForKey:@"subheader"];
-        detailController.imageString = [tier objectForKey:@"image"];
         detailController.hoursText = [tier objectForKey:@"hours"];
         detailController.phoneNumber = [tier objectForKey:@"phone"];
         detailController.descriptionText = [tier objectForKey:@"description"];
+        detailController.mainImageString = [tier objectForKey:@"mainImage"];
+        detailController.selectionImageString = [tier objectForKey:@"selectionImage"];
     }
 }
 

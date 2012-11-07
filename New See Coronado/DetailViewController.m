@@ -8,6 +8,7 @@
 
 #import "DetailViewController.h"
 #import "DrillDownTableViewController.h"
+#import "ButtonGridViewController.h"
 
 @interface DetailViewController ()
 
@@ -19,17 +20,23 @@
 
 @synthesize name = _name;
 @synthesize subHeaderText = _subHeaderText;
-@synthesize imageString = _imageString;
 @synthesize hoursText = _hoursText;
 @synthesize phoneNumber = _phoneNumber;
 @synthesize descriptionText = _descriptionText;
+@synthesize mainImageString = _mainImageString;
+@synthesize selectionImageString = _selectionImageString;
 
 @synthesize nameHeader = _nameHeader;
-@synthesize mainImage = _mainImage;
 @synthesize subHeader = _subHeader;
 @synthesize description = _description;
 @synthesize hours = _hours;
 @synthesize phone = _phone;
+
+@synthesize mainImage = _mainImage;
+@synthesize selectionImage = _selectionImage;
+@synthesize hoursImage = _hoursImage;
+@synthesize phoneImage = _phoneImage;
+@synthesize getDirectionsButton = _getDirectionsButton;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -44,19 +51,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.view sizeToFit];
     _scroll.scrollEnabled = YES;
-
-    
 
     _nameHeader.text = _name;
     _subHeader.text = _subHeaderText;
-    _mainImage.image = [UIImage imageNamed:_imageString];
     _hours.text = _hoursText;
     _phone.text = _phoneNumber;
     _description.text = _descriptionText;
     [_description sizeToFit];
-    [_scroll setContentSize:CGSizeMake(320, _description.frame.origin.y+_description.frame.size.height)];
+    
+    _mainImage.image = [UIImage imageNamed:_mainImageString];
+    _selectionImage.image = [UIImage imageNamed:_selectionImageString];
+    _hoursImage.image = [UIImage imageNamed:@"tie.jpg"];
+    _phoneImage.image = [UIImage imageNamed:@"tie.jpg"];
+    
+    int spacerHeight = 20;
+    _getDirectionsButton.frame = CGRectMake(_getDirectionsButton.frame.origin.x,
+                                  _description.frame.origin.y + _description.frame.size.height + spacerHeight,
+                                  _getDirectionsButton.frame.size.width,
+                                  _getDirectionsButton.frame.size.height);
+    
+    [_scroll setContentSize:CGSizeMake(320, _getDirectionsButton.frame.origin.y + _getDirectionsButton.frame.size.height + spacerHeight)];
     
 	// Do any additional setup after loading the view.
 }
@@ -69,6 +84,10 @@
     [self setDescription:nil];
     [self setHours:nil];
     [self setPhone:nil];
+    [self setHoursImage:nil];
+    [self setSelectionImage:nil];
+    [self setPhoneImage:nil];
+    [self setGetDirectionsButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
